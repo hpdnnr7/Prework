@@ -7,19 +7,24 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var billAmountTextField:  UITextField!
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
-    
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Tip Calculator"
+        
     }
+    
+    
 
     @IBAction func calculateTip(_ sender: Any){
         //Get bill amount from text field input
